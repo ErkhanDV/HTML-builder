@@ -2,8 +2,8 @@ const fs = require('fs');
 const path = require('path');
 const { stdout } = process;
 const targetDir = 'files-copy';
-const pathFrom = './04-copy-directory/files/';
-const pathTo = './04-copy-directory/files-copy/';
+const pathFrom = `${__dirname}/files/`;
+const pathTo = `${__dirname}/files-copy/`;
 
 const makeDir = () => {
   fs.mkdir(path.join(__dirname, targetDir), (err) => {
