@@ -25,7 +25,7 @@ const makeAssets = () => {
 const findTags = async () => {
   await clearHTML();
   const chunk = await readTemplate();
-  const tagsList = chunk.split('\n');
+  const tagsList = chunk.split('\r\n');
   for (const elem of tagsList) {
     if (elem.indexOf('{') != -1) {
       const elemArr = elem.split(' ');
